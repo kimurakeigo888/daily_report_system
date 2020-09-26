@@ -16,14 +16,15 @@
 							<th>氏名</th>
 							<td><c:out value="${employee.name}" /></td>
 						</tr>
-							<th>権限</th>
-							<td>
-								<c:choose>
-									<c:when test="${employee.admin_flag == 1}">管理者</c:when>
+						<tr>
+                            <th>権限</th>
+                            <td>
+                                <c:choose>
+                                    <c:when test="${employee.admin_flag == 1}">管理者</c:when>
                                     <c:otherwise>一般</c:otherwise>
-								</c:choose>
-							</td>
-						</tr>
+                                </c:choose>
+                            </td>
+                        </tr>
 						<tr>
 							<th>登録日時</th>
 							<td>
