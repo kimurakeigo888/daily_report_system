@@ -31,6 +31,12 @@
 								<fmt:formatDate value="${employee.created_at}" pattern="yyyy-MM-dd HH:mm:ss" />
 							</td>
 						</tr>
+						<tr>
+                            <th>更新日時</th>
+                            <td>
+                                <fmt:formatDate value="${employee.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
+                            </td>
+                        </tr>
 					</tbody>
 				</table>
 				<p><a href="<c:url value='/employees/edit?id=${employee.id}' />">この従業員情報を編集する</a></p>
